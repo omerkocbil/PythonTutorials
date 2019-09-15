@@ -12,33 +12,9 @@ print(len(soyadi))
 for h in adi:
     print(h)
 
-print('k' in 'Melike')
-print('Melike Hatay\'dan geldi') #ters bölü, kendisinden sonraki karakterin 
-                                 #cümle içinde asıl anlamında kullanılmasını 
-                                 #sağlar
-print('Bugün Fatih ile Melike oyun oynarken \
-topları patladı')                                #satır sonuna sığmayanlar için
-print('Bugün Fatih ile Melike oyun oynarken ' +  
-      'topları patladı')                         #satır sonuna sığmayanlar için
-
-dize = 'Kelimeler, kelimeler albayım \nBazı anlamlara gelmiyor'
-print(dize)                              #\n bir alt satıra geçirir
-dize2 = '''Tehlikeli oyunlar oynamak istiyor insan,
-Bir yandan da kılına zarar gelsin istyemiyor. 
-Küçük oyunlar istemiyorum albayım.
-Kelimeler, kelimeler albayım, bazı anlamlara gelmiyor.
-
-                                  Oğuz Atay'''
-print(dize2)              #üç tırnak ile de uzun cümleleri yazabiliriz
-# \t ifadesi de bir tab kadar boşluk koymak için kullanılır.
-
 maas = 15
 tutar = 1500.12
 print('Maaşımı her ayın ', maas, '\'inde alırım', sep = '')
-# Yukarıdaki gibi değişken ekleyebileceğimiz gibi cümlenin içine C'deki gibi de
-#ekleyebiliriz. Bir de Python'ın özelliği format() ile ekleyebilriz.
-print('Maaşımı her ayın %d\'inde alırım' % maas)
-print('Maaşımı her ayın %d\'inde %0.2f lira alırım' % (maas, tutar))
 print('Maaşımı her ayın {1}\'inde {0} lira alırım' .format(tutar, maas))
 
 cumle = 'python ömer'
@@ -82,6 +58,30 @@ print(i.isnumeric())
 
 
 
+print('k' in 'Melike')
+print('Melike Hatay\'dan geldi') #ters bölü, kendisinden sonraki karakterin 
+                                 #cümle içinde asıl anlamında kullanılmasını 
+                                 #sağlar
+print('Bugün Fatih ile Melike oyun oynarken \
+topları patladı')                                #satır sonuna sığmayanlar için
+print('Bugün Fatih ile Melike oyun oynarken ' +  
+      'topları patladı')                         #satır sonuna sığmayanlar için
+
+dize = 'Kelimeler, kelimeler albayım \nBazı anlamlara gelmiyor'
+print(dize)                              #\n bir alt satıra geçirir
+dize2 = '''Tehlikeli oyunlar oynamak istiyor insan,
+Bir yandan da kılına zarar gelsin istyemiyor. 
+Küçük oyunlar istemiyorum albayım.
+Kelimeler, kelimeler albayım, bazı anlamlara gelmiyor.
+
+                                  Oğuz Atay'''
+print(dize2)              #üç tırnak ile de uzun cümleleri yazabiliriz
+# \t ifadesi de bir tab kadar boşluk koymak için kullanılır.
+
+# Yukarıdaki gibi değişken ekleyebileceğimiz gibi cümlenin içine C'deki gibi de
+#ekleyebiliriz. Bir de Python'ın özelliği format() ile ekleyebilriz.
+print('Maaşımı her ayın %d\'inde alırım' % maas)
+print('Maaşımı her ayın %d\'inde %0.2f lira alırım' % (maas, tutar))
 
 
 
