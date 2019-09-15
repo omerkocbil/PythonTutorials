@@ -1,26 +1,4 @@
 #!/usr/bin/python3
-
-degerler = (12.5, 'ali', 5) #tüp yapısı #liste gibidirler ama değiştirilemezler
-kalkis, varis, mola = '12:30', '20:00', 4       #iki şekilde de kullanılabilir
-(kalkis, varis, mola) = ('12:30', '20:00', 4)   #iki şekilde de kullanılabilir
-#yukarıdaki gibi olunca tek başına kalkis değiştirlebilir çünkü o tüpün içi
-#listeler ile count() ve index() ortak fonksiyonlarıdır
-
-def topla(*sayilar):     #başına * koyunca tüp oluyor sayısız parametre almasını
-                         #sağlıyor. Javadaki int sayilar... gibi
-    toplam = 0
-    for i in sayilar:
-        toplam = toplam + i
-    return toplam
-
-print(topla(2, 3))
-print(topla(2, 3, 4))
-
-def enBuyukVeEnKucuk(*sayilar):
-    return max(sayilar), min(sayilar)
-
-print(enBuyukVeEnKucuk(45, 97, 3, 120, 56))
-
 cakmaSozluk = [('adhere', 'yapışmak'), ('bald', 'dazlak, kel')] #sözlük gibi kullana
                                                            #bileceğimiz yapı
 sozluk = {'adhere':'yapışmak', 'bald':'dazlak, kel'} #sözlük yapısı
@@ -81,7 +59,26 @@ print(sozluk8['1'](5, 7))                    #çağırırken parametreler atanac
 
 
 
+degerler = (12.5, 'ali', 5) #tüp yapısı #liste gibidirler ama değiştirilemezler
+kalkis, varis, mola = '12:30', '20:00', 4       #iki şekilde de kullanılabilir
+(kalkis, varis, mola) = ('12:30', '20:00', 4)   #iki şekilde de kullanılabilir
+#yukarıdaki gibi olunca tek başına kalkis değiştirlebilir çünkü o tüpün içi
+#listeler ile count() ve index() ortak fonksiyonlarıdır
 
+def topla(*sayilar):     #başına * koyunca tüp oluyor sayısız parametre almasını
+                         #sağlıyor. Javadaki int sayilar... gibi
+    toplam = 0
+    for i in sayilar:
+        toplam = toplam + i
+    return toplam
+
+print(topla(2, 3))
+print(topla(2, 3, 4))
+
+def enBuyukVeEnKucuk(*sayilar):
+    return max(sayilar), min(sayilar)
+
+print(enBuyukVeEnKucuk(45, 97, 3, 120, 56))
 
 
 
